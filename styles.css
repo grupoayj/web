@@ -32,10 +32,12 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    color: var(--text-main);
-    background-color: var(--bg-light);
+    color: #333333;
+    background-color: #f8fafc;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden; /* <--- LÍNEA CLAVE: Evita que cualquier elemento desborde la pantalla a la derecha */
+    width: 100%;
+    position: relative;
 }
 
 .container {
