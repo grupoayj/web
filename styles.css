@@ -171,7 +171,7 @@ body {
 
 /* Logo con presencia visual destacada pero contenida para no romper el header */
 .logo-img {
-    height: 100px;       /* Tamaño ideal para destacar sin expandir la barra */
+    height: 250px;       /* Tamaño ideal para destacar sin expandir la barra */
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
