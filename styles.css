@@ -21,8 +21,6 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html {
@@ -30,15 +28,13 @@ html {
     font-size: 16px;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    color: #333333;
-    background-color: #f8fafc;
-    line-height: 1.6;
-    overflow-x: hidden; /* <--- ESTO CORTA CUALQUIER DESBORDE HORIZONTAL */
+html, body {
     width: 100%;
-    max-width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden; /* <--- ESTA LÍNEA ES LA CLAVE ABSOLUTA: Corta cualquier elemento rebelde que quiera ensanchar la pantalla */
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
