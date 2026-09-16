@@ -167,16 +167,18 @@ body {
 .logo-box {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 8px;
     text-decoration: none;
+    max-width: 70%; /* <--- Evita que el logo ocupe más de la cuenta en móviles pequeños */
+    overflow: hidden;
 }
 
 /* Logo con presencia visual destacada pero contenida para no romper el header */
 .logo-img {
-    height: 300px;       /* Tamaño ideal para destacar sin expandir la barra */
-    width: auto;
+    height: 250px;       /* <--- Altura óptima para celulares */
+    max-width: 100%;    /* <--- Impide que la imagen rebase su contenedor */
     object-fit: contain;
-    flex-shrink: 0;
+    flex-shrink: 0;     /* <--- Evita que el navegador comprima el logo de forma extraña */
 }
 
 .logo-text {
@@ -709,16 +711,23 @@ body {
 
 /* --- FOOTER --- */
 .main-footer-section {
-    background-color: var(--primary-dark);
-    color: #cbd5e1;
-    padding: 5rem 0 2rem 0;
+    background-color: #07162c;
+    color: #94a3b8;
+    padding: 50px 0 20px 0;
+    overflow: hidden; /* <--- Impide que los elementos internos fuercen un ancho extra */
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
-    gap: 3rem;
-    margin-bottom: 4rem;
+    grid-template-columns: 1fr; /* <--- En móviles se muestra en una sola columna limpia */
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-logo .logo-img {
+    height: 150px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .footer-logo {
