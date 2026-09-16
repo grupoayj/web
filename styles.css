@@ -35,8 +35,9 @@ body {
     color: #333333;
     background-color: #f8fafc;
     line-height: 1.6;
-    overflow-x: hidden; /* <--- LÍNEA CLAVE: Evita que cualquier elemento desborde la pantalla a la derecha */
+    overflow-x: hidden; /* <--- ESTO CORTA CUALQUIER DESBORDE HORIZONTAL */
     width: 100%;
+    max-width: 100vw;
     position: relative;
 }
 
